@@ -6,6 +6,6 @@ import org.example.controller.Controllertodolist;
 // then press Enter. You can now see whitespace characters in your code.
 public class Main {
     public static void main(String[] args) {
-        Controllertodolist.main();
+        Controllertodolist.main2();
     }
 }
