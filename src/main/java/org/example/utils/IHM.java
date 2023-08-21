@@ -30,7 +30,7 @@ public class IHM {
                     afficherTodo();
                     break;
                 case "3":
-                    withDrawlAction();
+                    updateTodo();
                     break;
                 case "4":
                     remove();

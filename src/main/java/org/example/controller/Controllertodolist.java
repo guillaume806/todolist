@@ -19,7 +19,7 @@ public class Controllertodolist {
 
         em.getTransaction().begin();
 
-        Todolist person = new Todolist("manger", true);
+        Todolist person = new Todolist("manger", false);
 
         em.persist(person);
 
@@ -29,15 +29,18 @@ public class Controllertodolist {
 
     }
 
-//    public static void main2(){
-//        EntityManager em = emf.createEntityManager();
-//
-//        Todolist todolist = em.find(Todolist.class, 1L);
-//        System.out.println(todolist.toString());
-//        em.close();
-//        emf.close();
-//
-//    }
+    public static void updateTodo(){
+        EntityManager em = emf.createEntityManager();
+        em.getTransaction().begin();
+        Todolist todolist = em.find(Todolist.class, 2L);
+        System.out.println(todolist.toString());
+        todolist.setCompleted(true);
+        System.out.println(todolist.toString());
+        em.getTransaction().commit();
+        em.close();
+        emf.close();
+
+    }
 
 
 
