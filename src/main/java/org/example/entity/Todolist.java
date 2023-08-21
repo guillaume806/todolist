@@ -49,12 +49,5 @@ public class Todolist {
         this.completed = completed;
     }
 
-    @Override
-    public String toString() {
-        return "Todolist{" +
-                "id=" + id +
-                ", title='" + title + '\'' +
-                ", completed=" + completed +
-                '}';
-    }
+
 }
